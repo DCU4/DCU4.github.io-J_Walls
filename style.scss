@@ -1,0 +1,171 @@
+/*Universal*/
+
+*{
+	margin: 0;
+	padding: 0;
+	/*border: 1pt white solid;*/
+}
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: #000;
+	font-family: sans-serif;
+	color:#FFF;
+}
+
+h1 {
+	font-size: 5rem;	
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+
+p {
+	color: white;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.site-wrapper {
+	overflow: hidden;
+	height: 100%;
+}
+
+.material-icons {
+	/*In index.html <style>*/
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: 100px 500px 100px;
+	grid-template-areas: 
+		"header"
+		"content"
+		"icon";
+}
+
+/*First Page*/
+
+#front-page {
+	background:url('IMG_1228.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height:700px;
+
+}
+
+.header {
+	grid-area: header;
+	text-align: center;
+	/*position: relative;
+	top:0;*/
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+	li {
+		list-style-type: none;
+		margin: 10px;
+	}
+	i {
+		grid-area: icon;
+		justify-self:end;
+
+		/*position:absolute;
+		bottom: 0;
+		right: 0;*/
+	}
+}
+
+
+/*Music*/
+
+#music {
+	height:700px;
+	background-color: #000;
+	justify-items:center;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	h2 {
+		grid-area: header;
+		align-self: center;
+	}
+	iframe {
+		grid-area: content;
+		align-self: center;
+		padding: 0;
+		margin: 0;
+	}
+	i {
+		grid-area: icon;
+		justify-self:end;
+	}
+}
+
+
+/*About*/
+#about {
+	height:700px;
+	background-color: #b8a94a;
+	justify-items:center;
+	h2 {
+		grid-area: header;
+		align-self: center;
+	}
+	h4 {
+		grid-area:content;
+		align-self: center;
+	}
+	
+	i {
+		grid-area: icon;
+		justify-self:end;
+	}
+	
+}
+
+
+/*Contact*/
+
+#contact {
+	height:700px;
+	background-color: #000;
+	justify-items:center;
+	h2 {
+		grid-area: header;
+		padding-top:20px; 
+		
+	}
+	i {
+		grid-area: icon;
+		justify-self:end;
+	}
+
+}
+
+.contact-content {
+	grid-area: content;
+	align-self: center;
+	text-align: center;
+}

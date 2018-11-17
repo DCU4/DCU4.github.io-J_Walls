@@ -1,7 +1,7 @@
 
 $(function(){	
 	var instance = new TypeIt('#text-rotate', {
-     strings: ["creator.", "producer.", "designer.", "human."],
+     strings: ["creator.", "producer.", "designer.", "human.",],
      speed: 150,
      breakLines: false,
      autoStart: false,
