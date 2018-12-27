@@ -15,25 +15,25 @@ $(function(){
 $(".music-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#music").offset().top
-    }, 2000);
+    }, 2000,'swing');
 });
 
 $(".about-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
-    }, 2000);
+    }, 2000, 'swing');
 });
 
 
 $(".contact-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#contact").offset().top
-    }, 2000);
+    }, 2000, 'swing');
 });
 
 $(".front-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#front-page").offset().top
-    }, 2000);
+    }, 2000, 'swing');
 });
 });
